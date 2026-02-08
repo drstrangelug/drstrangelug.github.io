@@ -3,6 +3,7 @@
 <head>
   <title>UFO 1999</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages.css">
   <meta name="author" content="Paul Loveridge">
   <meta name="copyright" content="© 2026 Paul Loveridge. All rights reserved."">
 </head>
@@ -12,52 +13,26 @@
   </header>
 
   <nav class="navigation">
-    <a href="#" data-page="about">About</a>
-    <a href="#" data-page="chapters">Chapters</a>
-    <a href="#" data-page="background">Background</a>
-    <a href="#" data-page="contact">Contact</a>
+    <a href="index.html">About</a>
+    <a href="chapters.html">Chapters</a>
+    <a href="background.html">Background</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main id="content">
-    <iframe id="content-frame" src="pages/about.html" style="width: 100%; height: 600px; border: none;"></iframe>
+    <h2>About</h2>
+    <p>Welcome to my UFO 1999 website. This is a novelisation of a series that was never made - series two of <a
+        href="https://en.wikipedia.org/wiki/UFO_(British_TV_series)">UFO by Gerry Anderson</a>.</p>
+
+    <h2>Where to start</h2>
+    <p>Right now if you just want to read then goto <a href="chapters.html">chapters</a>.</p>
+
+    <h2>Why?</h2>
+    <p>I first watched both UFO and Space: 1999 in the 1970s as a children. In the 1980s and 1990s it was shown on
+      various
+      other channels and I discovered it again.</p>
   </main>
 
-  <script>
-    // Load content from external files using iframe
-    function loadPage(pageName) {
-      const iframe = document.getElementById('content-frame');
-      iframe.src = `pages/${pageName}.html`;
-      // Save the page to a cookie
-      document.cookie = `lastPage=${pageName}; max-age=${7 * 24 * 60 * 60}; path=/`;
-    }
-
-    // Get the last page from cookie, or default to 'about'
-    function getLastPage() {
-      const cookies = document.cookie.split(';');
-      for (let cookie of cookies) {
-        const [name, value] = cookie.trim().split('=');
-        if (name === 'lastPage') {
-          return value;
-        }
-      }
-      return 'about';
-    }
-
-    // Add click handlers to navigation links
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const pageName = link.getAttribute('data-page');
-        loadPage(pageName);
-      });
-    });
-
-    // Load the last visited page on page load
-    window.addEventListener('DOMContentLoaded', () => {
-      const lastPage = getLastPage();
-      loadPage(lastPage);
-    });
-  </script>
   </body>
 
 </html>
