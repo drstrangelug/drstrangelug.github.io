@@ -37,6 +37,7 @@ import Chapter2Section24 from "./pages/chapters/chapter2/Section24";
 import Chapter2Section25 from "./pages/chapters/chapter2/Section25";
 import Chapter2Section26 from "./pages/chapters/chapter2/Section26";
 import Chapter2Section27 from "./pages/chapters/chapter2/Section27";
+import AboutChapter2 from "./pages/chapters/chapter2/AboutChapter2";
 import NotFound from "./pages/NotFound";
 
 const Layout = () => (
@@ -174,6 +175,10 @@ function App() {
           <Route
             path="chapters/chapter-2/section-27"
             element={<Chapter2Section27 />}
+          />
+          <Route
+            path="chapters/chapter-2/AboutChapter2"
+            element={<AboutChapter2 />}
           />
           <Route path="background" element={<Background />} />
           <Route path="contact" element={<Contact />} />

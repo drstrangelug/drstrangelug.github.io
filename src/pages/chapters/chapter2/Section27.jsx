@@ -3,6 +3,7 @@ import ChapterSection from "../../../components/ChapterSection";
 const Chapter2Section27 = () => (
   <ChapterSection
     title="Chapter 2: Section 27"
+    next="/chapters/chapter-2/AboutChapter2"
     prev="/chapters/chapter-2/section-26"
   >
     <p>
