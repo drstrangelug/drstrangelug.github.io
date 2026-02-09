@@ -1,20 +1,26 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const About = () => (
   <>
     <h2>About</h2>
     <p>
-      Welcome to my UFO 1999 website. This is a novelisation of a series that was
-      never made - series two of{' '}
-      <a href="https://en.wikipedia.org/wiki/UFO_(British_TV_series)" target="_blank" rel="noreferrer">
+      Welcome to my UFO 1999 website. This is a novelisation of a series that
+      was never made - series two of{" "}
+      <a
+        href="https://en.wikipedia.org/wiki/UFO_(British_TV_series)"
+        target="_blank"
+        rel="noreferrer"
+      >
         UFO by Gerry Anderson
-      </a>.
+      </a>
+      .
     </p>
 
     <h2>Where to start</h2>
     <p>
-      Right now if you just want to read then go to{' '}
-      <Link to="/chapters">chapters</Link>.
+      Right now if you just want to read then go to{" "}
+      <Link to="/chapters">chapters</Link>. Geeks is the best one to start with,
+      it's my best so far.
     </p>
 
     <h2>Why?</h2>
