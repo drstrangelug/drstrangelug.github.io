@@ -29,6 +29,19 @@ const About = () => (
       1980s and 1990s it was shown on various other channels and I discovered it
       again.
     </p>
+
+    <h2>About time....</h2>
+    <p>
+      Ok, so in the original UFO a lot of things were supposed to be 
+      around in the 1980s but never happened.  We never started driving 
+      on the right side of the road.   And things happened in real life
+      that UFO couldn't forsee, like the space shuttle.
+    </p><p>
+      What I have done is 'retrofitted the past' into UFO.  It's never
+      going to be perfect but I do it only to serve the story.  As Michael York
+      said in "The Spy Who Shagged Me": I wouldn't pay too much attention
+      to that, just enjoy the ride.
+    </p>
   </>
 );
 
